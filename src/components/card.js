@@ -2,15 +2,20 @@ import main from './images/katie.jpg'
 import icon from './images/Star.svg'
 import dot from "./images/dot.svg";
 
-export default function Card({img,desc,price,rating,openSpots}){
+export default function Card({img,desc,price,rating,openSpots,online}){
     //console.log({img,desc,price,rating});
+    let badgeText;
+    if (online && openSpots){badgeText = 'ONLINE'}
+    else if (!openSpots){badgeText = 'SOLD OUT'}
+    else { badgeText = null};
+    console.log(badgeText)
     return(
         <div className='card'>
             <div className='card_image'>
                 <img src={img} alt=""/>
             </div>
-            {openSpots=== 0 && <div className='card_banner'>
-                <span>SOLD OUT</span> 
+            {badgeText && <div className='card_banner'>
+                <span>{badgeText}</span> 
             </div>}
             <div className='card_footer'>
                 <div className='card_footer_1'>

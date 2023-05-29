@@ -16,6 +16,7 @@ export default function App(){
             price={exp.price}
             rating={exp.rating}
             openSpots = {exp.openSpots}
+            online={exp.online}
         
         />
     })
