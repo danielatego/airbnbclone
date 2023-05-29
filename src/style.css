@@ -21,22 +21,24 @@ body{
     top: 22px;
 }
 .hero{
-   
+  position: relative; 
+  margin-left: 37px;
+  margin-top: 26px;
 }
 .hero>img{
-    position: absolute;
+    /* position: absolute; */
     width: 395.91px;
     height: 232px;
-    left: 77px;
-    top: 96px;
+    /* left: 77px;
+    top: 96px; */
 }
 .hero>h2{
     margin: 0px;
-    position: absolute;
+    /* position: absolute; */
     width: 347px;
     height: 40px;
-    left: 36px;
-    top: 360px;
+    /* left: 36px;
+    top: 360px; */
 
     font-family: 'Poppins';
     font-style: normal;
@@ -49,11 +51,11 @@ body{
     color: #000000;
 }
 .hero>p{
-        position: absolute;
+        /* position: absolute; */
     width: 320px;
     height: 56px;
-    left: 36px;
-    top: 416px;
+    /* left: 36px;
+    top: 416px; */
 
     font-family: 'Poppins';
     font-style: normal;
@@ -71,6 +73,7 @@ body{
     margin: 8px;
     height: 302px;
     width: 176px;
+    margin-right: 18px;
 }
 .card_image{
     position: relative;
@@ -148,4 +151,11 @@ body{
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
+}
+.scrollx{
+    position: relative;
+    display: flex;
+    width: 550px;
+    overflow-x: auto;
+    padding-left: 37px;
 }
