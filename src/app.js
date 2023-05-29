@@ -8,15 +8,20 @@ import Card from './components/card'
 import experiencesData from './experiencesData';
 export default function App(){
     const experiences = experiencesData.map(exp=> {
-        var imgy = exp.img
         return <Card
             key={exp.desc}
-            img = {imgy} 
-            desc={exp.desc}
-            price={exp.price}
-            rating={exp.rating}
-            openSpots = {exp.openSpots}
-            online={exp.online}
+
+            {...exp}
+
+            //item = {exp}
+
+
+            // img = {exp.img} 
+            // desc={exp.desc}
+            // price={exp.price}
+            // rating={exp.rating}
+            // openSpots = {exp.openSpots}
+            // online={exp.online}
         
         />
     })

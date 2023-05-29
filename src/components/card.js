@@ -3,7 +3,7 @@ import icon from './images/Star.svg'
 import dot from "./images/dot.svg";
 
 export default function Card({img,desc,price,rating,openSpots,online}){
-    //console.log({img,desc,price,rating});
+    //console.log(item);
     let badgeText;
     if (online && openSpots){badgeText = 'ONLINE'}
     else if (!openSpots){badgeText = 'SOLD OUT'}
